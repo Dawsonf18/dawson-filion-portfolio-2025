@@ -78,7 +78,11 @@ const Home = () => {
             <a href="/projects" className="btn btn-primary">
               View My Work
             </a>
-            <a href="#" className="btn btn-outline">
+            <a
+              href="/AI Engineering Resume.pdf"
+              download="Dawson-Filion-AI-Engineering-Resume.pdf"
+              className="btn btn-outline"
+            >
               <FaDownload /> Download Resume
             </a>
           </motion.div>
