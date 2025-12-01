@@ -15,7 +15,7 @@ const Projects = () => {
       description: 'A full-stack RAG (Retrieval-Augmented Generation) chatbot that helps users navigate company policy documents using natural language. Built with Azure OpenAI for embeddings and chat, Azure AI Search for vector retrieval, FastAPI backend, and React frontend. Features document ingestion pipeline, semantic search with cited sources, and real-time chat interface.',
       tags: ['Python', 'React', 'FastAPI', 'Azure OpenAI', 'Azure AI Search', 'RAG', 'LangChain'],
       icon: <FaRobot />,
-      github: 'https://github.com/Dawsonf18/policy-chatbot',
+      github: 'https://github.com/Dawsonf18/policy-ai-chatbot',
       featured: true,
     },
   ];
