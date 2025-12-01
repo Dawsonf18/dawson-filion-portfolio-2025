@@ -11,12 +11,11 @@ const Projects = () => {
   }, []);
   const projects = [
     {
-      title: 'AI-Powered Intelligent System (Example Project)',
-      description: 'Full-stack AI application that integrates advanced language models with custom business logic. Built with Python backend, React frontend, and deployed on Azure. Features real-time AI-powered insights, intelligent automation, and seamless user experience. (This is a placeholder - update with your actual AI project)',
-      tags: ['Python', 'React', 'Azure', 'OpenAI API', 'C#/.NET'],
-      icon: <FaBrain />,
-      github: 'https://github.com/Dawsonf18',
-      demo: '#',
+      title: 'Policy Chatbot',
+      description: 'A full-stack RAG (Retrieval-Augmented Generation) chatbot that helps users navigate company policy documents using natural language. Built with Azure OpenAI for embeddings and chat, Azure AI Search for vector retrieval, FastAPI backend, and React frontend. Features document ingestion pipeline, semantic search with cited sources, and real-time chat interface.',
+      tags: ['Python', 'React', 'FastAPI', 'Azure OpenAI', 'Azure AI Search', 'RAG', 'LangChain'],
+      icon: <FaRobot />,
+      github: 'https://github.com/Dawsonf18/policy-chatbot',
       featured: true,
     },
   ];
@@ -98,15 +97,7 @@ const Projects = () => {
                   rel="noopener noreferrer"
                   className="project-link"
                 >
-                  <FaGithub /> Code
-                </a>
-                <a
-                  href={project.demo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="project-link"
-                >
-                  <FaExternalLinkAlt /> Demo
+                  <FaGithub /> View Code
                 </a>
               </div>
             </motion.div>
