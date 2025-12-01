@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import {
   FaPython,
@@ -18,9 +19,13 @@ import {
   SiOpenai
 } from 'react-icons/si';
 import GalaxyBackground from '../components/Particles/GalaxyBackground';
+import { updatePageTitle } from '../utils/updateTitle';
 import './About.css';
 
 const About = () => {
+  useEffect(() => {
+    updatePageTitle('About');
+  }, []);
   const skills = [
     { name: 'C#', icon: <FaCode />, category: 'Backend' },
     { name: '.NET', icon: <SiDotnet />, category: 'Backend' },

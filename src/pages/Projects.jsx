@@ -1,9 +1,14 @@
+import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { FaGithub, FaExternalLinkAlt, FaBrain, FaRobot, FaChartLine } from 'react-icons/fa';
 import GalaxyBackground from '../components/Particles/GalaxyBackground';
+import { updatePageTitle } from '../utils/updateTitle';
 import './Projects.css';
 
 const Projects = () => {
+  useEffect(() => {
+    updatePageTitle('Projects');
+  }, []);
   const projects = [
     {
       title: 'AI-Powered Intelligent System (Example Project)',

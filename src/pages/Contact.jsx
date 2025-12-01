@@ -1,12 +1,17 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { FaEnvelope, FaLinkedin, FaGithub, FaPaperPlane } from 'react-icons/fa';
 import emailjs from '@emailjs/browser';
 import GalaxyBackground from '../components/Particles/GalaxyBackground';
+import { updatePageTitle } from '../utils/updateTitle';
 import './Contact.css';
 
 const Contact = () => {
   const form = useRef();
+
+  useEffect(() => {
+    updatePageTitle('Contact');
+  }, []);
   const [formData, setFormData] = useState({
     name: '',
     email: '',

@@ -1,10 +1,16 @@
+import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
 import { FaGithub, FaLinkedin, FaDownload } from 'react-icons/fa';
 import GalaxyBackground from '../components/Particles/GalaxyBackground';
+import { updatePageTitle } from '../utils/updateTitle';
 import './Home.css';
 
 const Home = () => {
+  useEffect(() => {
+    updatePageTitle('Home');
+  }, []);
+
   return (
     <div className="home">
       <GalaxyBackground />
