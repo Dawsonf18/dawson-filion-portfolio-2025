@@ -18,6 +18,14 @@ const Projects = () => {
       github: 'https://github.com/Dawsonf18/policy-ai-chatbot',
       featured: true,
     },
+    {
+      title: 'KPF Accounting Website',
+      description: 'A professional accounting firm website featuring an AI-powered RAG chatbot that answers client questions about services, pricing, and accounting topics. Built with React and Vite frontend, Vercel serverless functions for the API, and OpenAI GPT-4o-mini for intelligent responses. The chatbot uses embedded knowledge from the website content to provide accurate, contextual answers 24/7.',
+      tags: ['React', 'Vite', 'OpenAI', 'Vercel', 'Node.js', 'RAG', 'GPT-4'],
+      icon: <FaChartLine />,
+      demo: 'https://kpfaccounting.com',
+      featured: true,
+    },
   ];
 
   const containerVariants = {
@@ -91,14 +99,26 @@ const Projects = () => {
               </div>
 
               <div className="project-links">
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="project-link"
-                >
-                  <FaGithub /> View Code
-                </a>
+                {project.github && (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-link"
+                  >
+                    <FaGithub /> View Code
+                  </a>
+                )}
+                {project.demo && (
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-link"
+                  >
+                    <FaExternalLinkAlt /> View Demo
+                  </a>
+                )}
               </div>
             </motion.div>
           ))}
