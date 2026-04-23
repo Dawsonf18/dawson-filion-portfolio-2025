@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { FaGithub, FaExternalLinkAlt, FaBrain, FaRobot, FaChartLine } from 'react-icons/fa';
+import { FaGithub, FaExternalLinkAlt, FaBrain, FaRobot, FaChartLine, FaChartBar } from 'react-icons/fa';
 import GalaxyBackground from '../components/Particles/GalaxyBackground';
 import { updatePageTitle } from '../utils/updateTitle';
 import './Projects.css';
@@ -16,6 +16,14 @@ const Projects = () => {
       tags: ['Python', 'React', 'FastAPI', 'Azure OpenAI', 'Azure AI Search', 'RAG', 'LangChain'],
       icon: <FaRobot />,
       github: 'https://github.com/Dawsonf18/policy-ai-chatbot',
+      featured: true,
+    },
+    {
+      title: 'LumoraTrade',
+      description: 'A full-stack AI-powered trading research platform that combines 25+ technical indicators, three rule-based strategies, and an XGBoost ML model to surface actionable trade signals. Claude (Anthropic LLM) writes grounded natural-language explanations for each signal — it can only reference exact calculated values, preventing hallucination. Includes real-time options analytics with Black-Scholes pricing, a backtest engine, and a live dashboard with React Query. Advisory only — no auto-trading.',
+      tags: ['Python', 'React', 'FastAPI', 'PostgreSQL', 'Claude AI', 'XGBoost', 'Celery', 'Redis', 'Vite'],
+      icon: <FaChartBar />,
+      github: 'https://github.com/Dawsonf18/lumoraTrade',
       featured: true,
     },
     {
