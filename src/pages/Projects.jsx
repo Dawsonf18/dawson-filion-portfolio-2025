@@ -23,7 +23,7 @@ const Projects = () => {
       description: 'A full-stack AI-powered trading research platform that combines 25+ technical indicators, three rule-based strategies, and an XGBoost ML model to surface actionable trade signals. Claude (Anthropic LLM) writes grounded natural-language explanations for each signal — it can only reference exact calculated values, preventing hallucination. Includes real-time options analytics with Black-Scholes pricing, a backtest engine, and a live dashboard with React Query. Advisory only — no auto-trading.',
       tags: ['Python', 'React', 'FastAPI', 'PostgreSQL', 'Claude AI', 'XGBoost', 'Celery', 'Redis', 'Vite'],
       icon: <FaChartBar />,
-      github: 'https://github.com/Dawsonf18/lumoraTrade',
+      demo: 'https://lumoratrade.com',
       featured: true,
     },
     {
